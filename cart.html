@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart — AQEELAH BOOKS</title>
+  <meta name="description" content="Your cart at AQEELAH BOOKS" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="cart-body">
+  <div class="announce">FREE SHIPPING ON ORDERS OVER $100 — HANDMADE WITH LOVE</div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="assets/img/logo.png" class="logo-img" alt="Logo"></a>
+      <h1 class="site-title">Your Cart</h1>
+      <a class="cart" href="cart.html">CART (0)</a>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Home</a> / <span>Cart</span></nav>
+    <section class="cart-page">
+      <div class="cart-table-wrap">
+        <table class="cart-table" aria-describedby="cart-heading">
+          <thead><tr><th scope="col">Item</th><th scope="col">Price</th><th scope="col">Qty</th><th scope="col">Total</th><th scope="col" class="sr">Actions</th></tr></thead>
+          <tbody id="cart-page-items"></tbody>
+        </table>
+        <p id="cart-empty" class="muted" style="display:none">Your cart is empty.</p>
+      </div>
+      <aside class="cart-summary">
+        <h2 id="cart-heading">Order Summary</h2>
+        <div class="sum-row"><span>Subtotal</span><strong id="sum-subtotal">$0.00</strong></div>
+        <div class="sum-note muted">Shipping & taxes calculated at checkout.</div>
+        <button id="sum-checkout" class="btn" disabled>Checkout</button>
+        <button id="sum-continue" class="btn-outline" onclick="window.location='index.html#shop'">Continue Shopping</button>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><div class="logo small">AQEELAH BOOKS</div><p class="muted">© <span id="year"></span> AQEELAH BOOKS. All rights reserved.</p></div>
+      <nav><a href="index.html#about">About</a><a href="index.html#shop">Shop</a><a href="index.html#story">Our Story</a><a href="index.html#contact">Contact</a></nav>
+      <div class="payments muted">Credit — Debit — Zelle — Venmo</div>
+    </div>
+    <div class="marigold"></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
